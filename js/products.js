@@ -45,7 +45,7 @@ const TT_PRODUCTS = [
     "name": "Oneline Flower Ring — sterling silver",
     "price": 35,
     "currency": "USD",
-    "stock": 0,
+    "stock": 1,
     "image": "images/shop/jewel-01.jpg",
     "description": "Hand-finished sterling silver ring, engraved with an original oneline motif.\nSize: 18"
   },
