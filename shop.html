@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Tanta Tinta</title>
+<meta name="description" content="Original silkscreen artwork, prints and jewels by Tanta Tinta (Tamara Bendersky).">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16923239182">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16923239182');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TBFFC8VQ');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBFFC8VQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Tanta <span>Tinta</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="tattoos.html">Tattoos</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="murals.html">Wall Murals</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="collabs.html">Collabs</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" data-cart-toggle aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Shop</p>
+        <h1>Take a piece home.</h1>
+        <p class="lede">Original silkscreen artwork, digital prints and hand-finished jewels — every piece designed and made by Tamara. Ships from Brazil and Chile.</p>
+        <div class="cta-row">
+          <a href="shop.html#shop-grid" class="btn btn-outline btn-lg">Shop now</a>
+        </div>
+      </div>
+
+      <div class="media-item page-hero-photo" data-reveal>
+        <img src="images/shop/hero.jpg" alt="Descripción de la foto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="media-placeholder" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+
+      <!-- Admin editor — visit shop.html?admin=1 to see this panel -->
+      <div id="admin-panel" hidden>
+        <h3>Manage the shop</h3>
+        <p class="admin-note">Add or edit a piece below, then press <strong>Export products.js</strong> and paste the downloaded file over <code>js/products.js</code> to publish the change for every visitor. This panel is only visible when you add <code>?admin=1</code> to the shop URL — see README.md.</p>
+        <form id="admin-add-form" class="admin-form-grid">
+          <input type="hidden" name="id">
+          <div>
+            <label for="a-name">Name</label>
+            <input id="a-name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="a-category">Category</label>
+            <select id="a-category" name="category">
+              <option value="silkscreen">Silkscreen artwork</option>
+              <option value="prints">Prints</option>
+              <option value="jewels">Jewels</option>
+            </select>
+          </div>
+          <div>
+            <label for="a-price">Price</label>
+            <input id="a-price" name="price" type="number" step="0.01" required>
+          </div>
+          <div>
+            <label for="a-currency">Currency</label>
+            <select id="a-currency" name="currency">
+              <option value="USD">USD</option>
+              <option value="CLP">CLP</option>
+              <option value="BRL">BRL</option>
+            </select>
+          </div>
+          <div>
+            <label for="a-stock">Quantity available</label>
+            <input id="a-stock" name="stock" type="number" required>
+          </div>
+          <div>
+            <label for="a-image">Image path</label>
+            <input id="a-image" name="image" type="text" placeholder="images/shop/my-piece.jpg">
+          </div>
+          <div class="full">
+            <label for="a-description">Description</label>
+            <textarea id="a-description" name="description"></textarea>
+          </div>
+          <div class="full">
+            <button type="submit" class="btn btn-primary">Save piece</button>
+          </div>
+        </form>
+        <div id="admin-list"></div>
+        <div class="admin-actions">
+          <button type="button" id="admin-export" class="btn btn-ink">Export products.js</button>
+          <button type="button" id="admin-reset" class="btn btn-outline">Discard local changes</button>
+        </div>
+      </div>
+
+      <div class="shop-filters">
+        <button class="shop-filter active" data-filter="all">All</button>
+        <button class="shop-filter" data-filter="silkscreen">Silkscreen artwork</button>
+        <button class="shop-filter" data-filter="prints">Prints</button>
+        <button class="shop-filter" data-filter="jewels">Jewels</button>
+      </div>
+
+      <div id="shop-grid" class="product-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Tanta Tinta</p>
+        <p style="color:var(--tan);max-width:34ch;">Tamara Bendersky — oneline &amp; abstract tattoos, artwork and murals between Chile and Brazil.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="tattoos.html">Tattoos</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="murals.html">Wall Murals</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="collabs.html">Collabs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/tantatinta_/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://wa.me/5521995780587" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:contacto.tantatinta@gmail.com">Email</a></li>
+          <li><a href="https://tamarabendersky.myportfolio.com/" target="_blank" rel="noopener">Full portfolio ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tanta Tinta — Tamara Bendersky. All artwork and designs are original.</span>
+      <span>Rio de Janeiro, Brazil · Chile</span>
+    </div>
+  </div>
+</footer>
+
+<div id="cart-drawer" class="cart-drawer">
+  <div class="cart-drawer-head">
+    <strong>Your cart</strong>
+    <button class="cart-close" data-cart-close aria-label="Close cart">×</button>
+  </div>
+  <div id="cart-drawer-body" class="cart-drawer-body"></div>
+  <div id="cart-drawer-footer" class="cart-drawer-footer"></div>
+</div>
+<div class="cart-drawer-overlay" data-cart-close></div>
+
+<div id="product-modal" class="product-modal" hidden>
+  <div class="product-modal-overlay" data-product-modal-close></div>
+  <div class="product-modal-panel">
+    <button class="product-modal-close" data-product-modal-close aria-label="Close">×</button>
+    <div id="product-modal-body" style="display:contents;"></div>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
