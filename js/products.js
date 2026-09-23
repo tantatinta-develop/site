@@ -27,7 +27,7 @@ const TT_PRODUCTS = [
     "currency": "USD",
     "stock": 4,
     "image": "images/shop/silk-03.jpg",
-    "description": "I've always been fascinated by the patterns trees form as they grow, and how they wind around one another — how they interact with each other. This manipulated analog photo invites you to play and search for new figures that emerge from these interactions.\n\nScreen print in 2 colors\nSirio Pearl grey paper. \n50x35 cm.\nSigned copy with a certificate of authenticity.\n\nFrame is not included in the price."
+    "description": "I've always been fascinated by the patterns trees form as they grow, and how they wind around one another. This manipulated analog photo invites you to play and search for new figures that emerge from these interactions.\n\nScreen print in 2 colors\nSirio Pearl grey paper. \n50x35 cm.\nSigned copy with a certificate of authenticity.\n\nFrame is not included in the price."
   },
   {
     "id": "silk-04",
@@ -42,21 +42,61 @@ const TT_PRODUCTS = [
   {
     "id": "jewel-01",
     "category": "jewels",
-    "name": "Oneline Flower Ring — sterling silver",
+    "name": "Melted Flower Ring — sterling silver",
     "price": 35,
     "currency": "USD",
     "stock": 1,
     "image": "images/shop/jewel-01.jpg",
-    "description": "Hand-finished sterling silver ring, engraved with an original oneline motif.\nSize: 18"
+    "description": "Hand-made sterling silver ring.\nSize: 18"
+  },
+    {
+    "id": "jewel-02",
+    "category": "jewels",
+    "name": "Melted flower earrings — sterling silver",
+    "price": 29,
+    "currency": "USD",
+    "stock": 1,
+    "image": "images/shop/jewel-02.jpg",
+    "images": ["images/shop/jewel-02.jpg", "images/shop/jewel-02-b.jpg"],
+    "description": "Hand-made sterling silver earrings.\n"
+  },  {
+    "id": "jewel-03",
+    "category": "jewels",
+    "name": "Geometry Ring — sterling silver",
+    "price": 35,
+    "currency": "USD",
+    "stock": 1,
+    "image": "images/shop/jewel-03.jpg",
+    "description": "Hand-made sterling silver ring.\nAdjustable size."
   },
   {
     "id": "print-01",
     "category": "prints",
     "name": "Jardim Botánico II - digital print",
-    "price": 17,
+    "price": 15,
     "currency": "USD",
     "stock": 5,
     "image": "images/shop/print-01.jpg",
+    "description": "Digital print.\n30x42 cms.\nSigned copy with a certificate of authenticity.\n\nFrame is not included in the price."
+  },
+  {
+    "id": "print-02",
+    "category": "prints",
+    "name": "Jardim Botánico I - digital print",
+    "price": 15,
+    "currency": "USD",
+    "stock": 5,
+    "image": "images/shop/print-02.jpg",
+    "description": "Digital print.\n30x42 cms.\nSigned copy with a certificate of authenticity.\n\nFrame is not included in the price."
+  },
+  {
+    "id": "print-03",
+    "category": "prints",
+    "name": "O Irmão dos Morros - digital print",
+    "price": 15,
+    "currency": "USD",
+    "stock": 5,
+    "image": "images/shop/print-03.jpg",
     "description": "Digital print.\n30x42 cms.\nSigned copy with a certificate of authenticity.\n\nFrame is not included in the price."
   }
 ];

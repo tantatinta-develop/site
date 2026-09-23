@@ -856,6 +856,15 @@ textarea{resize:vertical;min-height:120px;}
   .checkout-summary{order:-1;}
 }
 
+html { scroll-behavior: smooth; }
+
+.hero-link { display: block; cursor: pointer; }
+
+.hero-link .page-hero-photo img { transition: transform .5s ease, opacity .3s ease; }
+.hero-link:hover .page-hero-photo img { transform: scale(1.03); opacity: .92; }
+
+#galeria { scroll-margin-top: 80px; } /* ajusta al alto de tu menú fijo */
+
 /* ---------- admin panel ---------- */
 #admin-panel{
   border:2px dashed var(--brick);
